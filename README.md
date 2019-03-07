@@ -1,2 +1,3 @@
 # Person_name2
-Дипломный проект Быстрицкий Артём Романович
+Graduation project Bystritsky Artyom Romanovich
+reference to the project - https://orcode.github.io/Person_name2/
