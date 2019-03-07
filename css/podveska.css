@@ -1,0 +1,345 @@
+*{
+	margin:0;
+	padding:0;
+}
+html {
+   height: 100%;
+   width: 100%;
+}
+body, #container, #info{
+	min-height: 100%;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.cont{
+	flex:1;
+}
+a, ul, li{
+	text-decoration: none;
+	list-style-type: none;	
+	color:rgb(0, 255, 255);
+}
+h1{
+	font-size: 40px;
+	font-family:fantasy;
+	color:black;
+}
+sup{
+	font-size: 20px;
+	color:black;
+}
+header {
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	height: 130px;
+	background: rgb(255, 0, 102);
+	width: 100%;
+}
+h4 {
+	font-size: 21px;
+	margin: 5px;
+	font-weight:bolder;
+	color: rgb(255, 0, 102);
+	height: 36px;
+}
+h5{
+	font-size: 21px;
+	font-weight:bolder;
+	color: rgb(0, 255, 255);
+}
+p {
+	font-size: 18px;
+	margin:5px;
+	color: rgb(255, 0, 102);
+}
+h2{
+	text-align:center;
+	margin:20px auto;
+	color: rgb(255, 0, 102);
+}
+.line{
+	width: 100%;
+	height: 3px;
+	background-color:rgb(0, 255, 255);
+	content:' ';
+}
+.logo{
+	margin-left:10%;
+}
+#poisk{
+	margin-right:10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: 17px;
+	position: relative;
+}
+
+.newmenu h6, .newmenu h5{
+	font-size: 15px;
+	color:rgb(0, 255, 255);
+	padding:15px 0;
+}
+.newmenu{
+	display: flex;
+	flex-basis: 80%;
+	background: darkgray;
+}
+input[type="checkbox"], .submenu{
+	display: none;
+}
+.togglemenu, .smenu, .dmenu, .hmenu{
+	display: none;
+}
+
+
+.demo{
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+}
+.slider{
+	width: 50%;
+	position: relative;
+}
+.slider img{
+	width: 100%;
+}
+.slide{
+	display:inline-block;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.slide img{
+	display:inline-block;
+	height: 100%;
+	width: 100px;
+	cursor:pointer;
+}
+.opisanie{
+	position: relative;
+	width: 40%;
+	color:black;
+	padding-left:10px;
+}
+.opisanie h2, h4{
+	margin-top:10px;
+}
+.opisanie li{
+	margin-left:1em;
+	color:rgb(255, 0, 102);
+}
+
+button{
+	margin-top: 10px;
+	outline: none;
+	border:2px solid rgb(0, 255, 255);
+	padding:5px 10px;
+	border-radius: 25px;
+	color: rgb(255, 0, 102);
+	font-family: Evo !important;
+	font-size:20px;
+	background: white;
+	font-weight:bolder;
+	cursor:pointer;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+button:active{
+	transform: translateY(1px);
+}
+button::-moz-focus-inner {
+   border: none;
+}
+footer{
+	padding:15px 10%;
+	background: rgb(255, 0, 102);
+	font-family: Evo !important;
+	display: flex;
+	height: 120px;
+	justify-content: space-between;
+}
+footer img{
+	height: 18px;
+	width: 18px;
+}
+
+#onas{
+	display: flex;
+	flex-direction: column;
+}
+.mw480{
+	display: none;
+}
+
+
+
+
+
+
+@media(max-width: 1024px){
+	.newmenu{
+		display: block;
+		width: 100%;
+	}
+	.smenu ul{
+		width: 98%;
+		padding:5px;
+	}.newmenu h5{
+		padding:10px;
+		font-size: 20px;
+	}
+	.smenu h5, .smenu h6{
+		font-size: 20px;
+		padding:5px;
+		border:1px solid rgb(0, 255, 255);
+	}
+	.plm, .smenu, .dmenu{
+		display: none;
+	}
+	.plm:checked + label h5{
+		color:rgb(255, 0, 102);
+	}
+	.amenu:checked + label h5,
+	.gmenu:checked + label h6{
+		color:rgb(255, 0, 102);
+		margin:2px 0;
+	}
+	.plm:checked ~ .smenu,
+	.amenu:checked ~ .dmenu,
+	.gmenu:checked ~ .hmenu{
+			display: block;
+	}
+	.imgvision{
+		display:none;
+	}
+	.mini h4{
+		font-size: 14px;
+	}
+	.mini p{
+		font-size: 17px;
+	}
+	#o_nas{
+		flex-basis: 20%;
+	}
+	#footer p{
+		font-size: 18px;
+	}
+	#footer a{
+		font-size: 15px;
+	}
+	#footer img{
+		height: 15px;
+		width: 15px;
+	}
+}
+
+@media screen and (min-width:1024px){
+	.plm + label{
+		display: none;
+	}
+	.newmenu h5{
+		font-size: 20px;
+	}
+	.newmenu h6{
+		padding:5px;
+	}
+	.smenu{
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 80%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.dmenu, .hmenu{
+		position: absolute;
+		top:90%;
+		padding: 10px;
+		z-index: 3;
+		background: darkgray;
+		border:1px solid rgb(0, 255, 255);
+	}
+	.hmenu{
+		top:2%;
+		left:95%;
+	}
+.smenu > li:hover .dmenu{
+	display: block;
+}
+.dmenu > li:hover .hmenu{
+	display: block;
+}
+
+}
+@media (max-width: 485px){
+	h1{
+		font-size: 28px;
+	}
+	sup{
+		font-size: 14px;
+	}
+	#tt{
+		width:90%;
+	}
+	#tt a{
+		width: 48%;
+	}
+	.logo{
+		margin-left: 5%;
+	}
+	#poisk{
+		margin-right: 5%;
+	}
+	#menu{
+		height: 130px;
+	}
+	#menu_punkts{
+		flex-direction: column;
+		padding-top:0;
+	}
+	#menu_punkts li{
+		margin:5px;
+		padding-top:0;
+	}
+	#menu_punkts li:hover .submenu{
+	display:none;
+	}
+	input[type="text"]{
+		width: 90px;
+	}
+	p{
+		font-size: 16px;
+	}
+	#laibel img{
+	height: 48px;
+	}
+	footer{
+		height: 80px;
+	}
+	footer li{
+		font-size: 14px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	#onas a{
+		display:none;
+	}
+	.mw480{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5px;
+	}
+	.mw480 img{
+		width: 22px;
+		height: 22px;
+	}
+	footer img{
+		width: 15px;
+		height: 15px;
+	}
+}

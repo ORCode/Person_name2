@@ -1,0 +1,575 @@
+*{
+	margin:0;
+	padding:0;
+}
+body, #container, #info{
+	margin:0 auto;
+}
+body, sup, h3, h5{
+	margin:0;
+	padding:0;
+	color: rgb(0, 255, 255);
+}
+header {
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	height: 15vh;
+	background: rgb(255, 0, 102);
+	height: 100px;
+	width: 100%;
+}
+header h2{
+	font-size: 40px;
+	font-family:fantasy;
+	color:black;
+	margin:0;
+}
+header label{
+}
+.logo{
+	margin-left:10%;
+}
+.logo sup{
+	font-size: 20px;
+	color:black;
+}
+#poisk{
+	margin-right:10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: 17px;
+	position: relative;
+}
+.line{
+	width: 100%;
+	height: 2px;
+	background-color:rgb(0, 255, 255);
+	content:' ';
+}
+#info{
+	width: 80%;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.mini{
+	margin-top:20px;
+	display:flex;
+	justify-content: center;
+	width: 32%;
+	height: 270px;
+	color:rgb(255, 0, 102);
+	border: 2px solid rgb(0, 255, 255);
+	text-align: center;
+	position: relative;
+}
+p{
+	font-size: 21px;
+	margin-top: 10px;
+	font-weight:bolder;
+}
+h4{
+	font-size: 18px;
+	margin:5px;
+	position: absolute;
+	top:55px;
+	color: rgb(255, 0, 102);
+}
+h2{
+	margin:10px;
+	color: rgb(255, 0, 102);
+}
+#tt {
+	width: 80%;
+	margin:0 auto 14px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#tt a{
+	width: 18%;
+}
+.tovar{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	color:rgb(255, 0, 102);
+	
+}
+.tovar:hover{
+	box-shadow: 0 0 10px; 
+	border-radius: 10px;
+	transform: scale(1.01);
+}
+.tovar img{
+	width: 95%;
+	margin:10px auto;
+}
+.name{
+	margin-left: 25px;
+	color:black;
+	font-size:15px;
+	height: 20px;
+	overflow:hidden;
+	text-align: center;
+}
+.price{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer{
+	padding:10px;
+	background: rgb(255, 0, 102);
+	font-family: Evo !important;
+	display: flex;
+	height: 15vh;
+	justify-content: space-between;
+	color: rgb(0, 255, 255);
+}
+#footer ul{
+	padding: 0;
+	margin:0;
+	font-size: 18px;
+	color:rgb(0, 255, 255);
+	width: 200px;
+}
+#footer li{
+	list-style-type: none;
+	margin-left:1em;
+	width: 160px;
+}
+#footer img{
+	height: 18px;
+	width: 20px;
+	margin-top:3px;
+}
+#o_nas {
+	display: flex;
+	flex-basis: 15%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mw320{
+	display: none;
+}
+@media (min-width: 480px){
+#menu{
+	width: 100%;
+	height: 50px;
+	background: darkgray;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+a, ul, li{
+	text-decoration: none;
+	list-style-type: none;	
+	color:rgb(0, 255, 255);
+}
+#menu_punkts{
+	width: 80%;
+	padding: 10px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#menu_punkts li {
+	display:inline-block;
+	font-size: 20px;
+	position: relative;
+	height: 43px;
+	padding-top: 19px;
+}
+#menu_punkts li:hover .submenu{
+	display:block;
+}
+#menu_punkts li ul li{
+	width: 100%;
+}
+#menu_punkts li ul li:hover .downmenu{
+	display:block;
+}
+.submenu, .downmenu  {
+	display:none;
+	z-index: 3;
+	background: black;
+	border:2px solid rgb(0, 255, 255);
+	border-radius: 5px;
+	padding:7px;
+	position: absolute;
+	top:45px;
+	width: 100px;
+}
+.downmenu{
+	position: absolute;
+	top:-5px;
+	left:100px;
+}
+.submenu .line{
+	margin:3px auto;
+}
+#menu_punkts li ul li{
+	padding: 0;
+	font-size: 16px;
+	height: 17px;
+}
+
+
+#container {
+	background-image:url("../img/logo/velot.png");
+	width: 80%;
+	height: 36vw;
+	margin:20px auto;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	opacity: 1;
+	position: relative;
+	
+}
+#container:hover {
+	opacity: 1;
+}
+.rejim {
+	width: 150px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.radio {
+display: none;
+}
+.radio-custom {
+width: 20px;
+height: 20px;
+border: 2px solid rgb(255, 0, 102);
+border-radius: 3px;
+position: relative;
+cursor:pointer;
+}
+.radio-custom,
+.label {
+display: inline-block;
+vertical-align: middle;
+margin:0 auto;
+}
+.radio:checked + .radio-custom::before {
+content: "";
+display: block;
+position: absolute;
+top: 2px;
+right: 2px;
+bottom: 2px;
+left: 2px;
+background: rgb(0, 255, 255);
+border-radius: 2px;
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+border-radius: 50%;
+}
+
+#prev, #next{
+	cursor: pointer;
+	position: absolute;
+	top:45%;
+	margin-top: -22px;
+	padding:16px;
+	color:white;
+	font-weight:bold;
+	font-size: 18px;
+	background:rgba(0,0,0,0.8);
+	opacity: 0.3;
+}
+#prev{
+	left:0;
+	border-radius:0 3px 3px 0;
+}
+#next{
+	right:0;
+	border-radius: 3px 0 0 3px;
+
+}
+#prev:hover, #next:hover{
+	background-color:red;
+	opacity: 1;
+}
+#best{
+	margin-top:30px;
+}
+#laibel{
+	height: 130px;
+	margin-top:0px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items:center;
+}
+#laibel img{
+	height: 95px;
+}
+}
+
+
+
+
+@media(max-width: 1024px){
+	.imgvision{
+		display:none;
+	}
+	.mini h4{
+		font-size: 14px;
+	}
+	.mini{
+		height: 245px;
+	}
+	.mini p{
+		font-size: 17px;
+	}
+	#laibel img{
+		height: 95px;
+	}
+	.name{
+	margin-left:0;
+	font-size:12px;
+	height: 14px;
+	text-align: center;
+	}
+	#o_nas{
+		flex-basis: 25%;
+	}
+	#footer p{
+		font-size: 18px;
+	}
+	#footer a{
+		font-size: 15px;
+	}
+	#footer img{
+		height: 15px;
+		width: 15px;
+	}
+}
+
+
+
+@media (max-width: 480px) {
+	header {
+		height: 15vh;
+		background: rgb(255, 0, 102);
+		height: 100px;
+		width: 100%;
+	}
+	header h2{
+		font-size: 20px;
+		font-family:fantasy;
+		color:black;
+		margin:7px auto;
+	}
+	header label{
+	}
+	.logo{
+		margin-left:10%;
+		width: 50%;
+	}
+	.logo sup{
+		font-size: 12px;
+		color:black;
+	}
+	#poisk{
+		margin-right:10%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		font-size: 12px;
+		position: relative;
+		text-align: right;
+	}
+	input[type="text"]{
+		width: 50%;
+
+	}
+	a, ul, li{
+		text-decoration: none;
+		list-style-type: none;	
+		color:rgb(0, 255, 255);
+	}
+	h2{
+		font-size: 14px;
+	}
+	#menu{
+		background: darkgray;
+		display: block;
+		width: 100%;
+		height: 77px;
+	}
+	#menu_punkts{
+		position: relative;
+		padding:0;
+		width: 100%;
+		height: 100%;
+	}
+	.svelo{
+		position: absolute;
+		top:15px;
+		left:15px;
+	}
+	.sskeit{
+		position: absolute;
+		top:15px;
+		right:15px;
+	}
+	.sbezop{
+		position: absolute;
+		right:15px;
+		bottom:15px;
+	}
+	.skompl{
+		position: absolute;
+		left:15px;
+		bottom:15px;
+	}
+	#container {
+	background-image:url("../img/logo/velot.png");
+	width: 100vw;
+	height: 45vw;
+	margin:10px auto;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	opacity: 1;
+	position: relative;
+	}
+	.rejim {
+	width: 150px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+	.radio-custom {
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgb(255, 0, 102);
+	border-radius: 3px;
+	position: relative;
+	cursor:pointer;
+	}
+	.radio-custom,
+	.label {
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 auto;
+	}
+	.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: rgb(0, 255, 255);
+	border-radius: 2px;
+	}
+	.radio-custom,
+	.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+	}
+
+	#prev, #next{
+		cursor: pointer;
+		position: absolute;
+		top:45%;
+		margin-top: -22px;
+		padding:16px;
+		color:white;
+		font-weight:bold;
+		font-size: 18px;
+		background:rgba(0,0,0,0.8);
+		opacity: 0.3;
+	}
+	#prev{
+		left:0;
+		border-radius:0 3px 3px 0;
+	}
+	#next{
+		right:0;
+		border-radius: 3px 0 0 3px;
+
+	}
+	#prev:hover, #next:hover{
+		background-color:red;
+		opacity: 1;
+	}
+	#menu_punkts li {
+		font-size: 15px;
+		display: block;
+		margin:0;
+		padding-top: 2px;
+		height: 17px;
+}
+.submenu, #info, .radio, .h2n{
+	display: none;
+}
+#laibel{
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+#laibel img{
+	height: 40px;
+}
+#tt{
+	width:90%;
+}
+#tt a{
+	width: 48%;
+}
+#footer{
+	padding:10px;
+	height: 100px;
+	justify-content: space-between;
+	font-size: 13px;
+}
+#footer ul{
+	padding: 0;
+	margin:0;
+	font-size: 13px;
+	width: 140px;
+}
+#footer li{
+	margin-left:1em;
+	width: 110px;
+}
+#footer img{
+	height: 14px;
+	width: 13px;
+}
+#o_nas {
+	display: block;
+	width: 100px;
+}
+#o_nas a{
+	display: none;
+}
+.mw320{
+	display:inline-block;
+	width: 80px;
+	display:flex;
+	justify-content: space-around;
+}
+#footer p{
+	font-size: 13px;
+}
+}

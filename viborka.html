@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" contant="width=device-width, initial-scale=1">
+	<title>TopShop</title>
+	<link rel="stylesheet" type="text/css" href="css/viborka.css">
+	<script src="js/viborka.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html">
+				<h1>Boards <sup>lvl up</sup></h1>
+			</a>
+		</div>
+		<div id="poisk">
+			<a href="SingIn.html">Вход</a>
+			<a href="check_in.html">Регистрация</a>
+			<label >&#128270; <input type="text" id="idsearch"  placeholder="Поиск"></label>
+		</div>
+	</header>
+	<div class="line"></div>
+	
+	<div id="container">
+		<div id="sort">
+			<div class="okover owmin1024" onclick="showMenuex()">
+				<h5>Ок</h5>
+			</div>
+			<div class="menuonoff wmin1024" onclick="showMenu()">
+				<h5>Т</h5>
+				<h5>О</h5>
+				<h5>В</h5>
+				<h5>А</h5>
+				<h5>Р</h5>
+				<h5>Ы</h5>
+			</div>
+			<h2>Сортировка по категориям</h2>
+			<button onclick="velo()">Велосипеды</button>
+				<div id="velo" class="katsor">
+					<label><input type="checkbox">Электровелосипеды</label><br>
+					<label><input type="checkbox">Горные</label><br>
+					<label><input type="checkbox">Трехколесные</label><br>
+				<div class="line"></div>
+					<label><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+				</div>
+			<button onclick="skeit()">Лонгборды</button>
+				<div class="katsor">
+					<label><input type="checkbox">Лонгборды</label><br>
+					<label><input type="checkbox">Скейтборды</label><br>
+					<label><input type="checkbox">Пенниборды</label><br>
+				<div class="line"></div>
+					<label><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+				</div>
+			<button onclick="rem()">Комплектующие</button>
+				<div class="katsor">
+					<label><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+				<div class="line"></div>
+					<label ><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+				<div class="line"></div>
+					<label><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+
+				</div>
+			<button onclick="bezop()">Безопасность</button>
+				<div class="katsor">
+					<label><input type="checkbox">Шлемы</label><br>
+					<label><input type="checkbox">Налокотники</label><br>
+					<label><input type="checkbox">Наколенники</label><br>
+				<div class="line"></div>
+					<label><input type="checkbox">Фликеры</label><br>
+					<label><input type="checkbox">Камеры</label><br>
+					<label><input type="checkbox">Рамы</label><br>
+					<label><input type="checkbox">Амортизаторы</label><br>
+					<label><input type="checkbox">Звезды</label><br>
+				<div class="line"></div>
+				</div>
+		</div>
+		<div id="tovarosort">	
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/podveskalong2.jpg" alt="Kreiss">
+					<div class="name">Подвеска для лонгборда GULLWING REVERSE - LOUIS PILLONI BLUE</div>
+					<span class="optov"></span>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/podship2.png" alt="Kreiss">
+					<div class="name">ПОДШИПНИКИ BLAZE BEARINGS</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/deka.jpg" alt="Kreiss">
+					<div class="name">ДЕКА ДЛЯ ЛОНГБОРДА SECTOR9 MINI DAISY</div>
+					<span class="optov"></span>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>			
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/long1.png" alt="Kreiss">
+					<div class="name">ЛОНГБОРД SECTOR 9 RAINBOW UNAGI 2018</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/long2.jpg" alt="Kreiss">
+					<div class="name">ЛОНГБОРД SECTOR 9 JAMMING</div>
+					<span class="optov"></span>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>			
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/podship.png" alt="Kreiss">
+					<div class="name">КЕРАМИЧЕСКИЕ ПОДШИПНИКИ SECTOR 9 BLACK BALL</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/podveskalong2.jpg" alt="Kreiss">
+					<div class="name">Подвеска для лонгборда GULLWING REVERSE - LOUIS PILLONI BLUE</div>
+					<span class="optov"></span>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>		
+			<a href="#" class="tsa">
+				<div class="velo gor"> 
+					<img src="img/Kreiss2.2.png" alt="Kreiss">
+					<div class="name">Скейтборд Kreiss 2</div>
+					<div class="price"><span>568</span><span>BYN</span></div>
+				</div>
+			</a>	
+		</div>
+	</div>	<!-- контейнер -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="line"></div>
+	
+	<footer>
+		<div class="contact">
+			<ul>
+				<h5>
+					Наши контакты:
+				</h5> 
+				<li>
+					<img src="img/velcom.png" alt="velcome"> +375291538290
+				</li>
+				<li>
+					<img src="img/mts.png" alt="mtse"> +375291538290
+				</li>
+				<li>
+					<img src="img/homefone.png" alt="home_fone"> 80172208935
+				</li>
+			</ul>
+		</div>
+			
+		<div id="onas">
+			<h5>Ищите нас тут!</h5>
+			<a href="#"><img src="img/vk.svg" alt="vk">Vkontakte </a> 
+			<a href="#"><img src="img/instagram.svg" alt="instagram">Instagramm</a>
+			<a href="#"><img src="img/facebook.svg" alt="facebook">Facebook</a>
+			<a href="#"><img src="img/twitter.svg" alt="twitter">Twitter</a>
+			<div class="mw480">
+				<img src="img/vk.svg" alt="vk">
+				<img src="img/instagram.svg" alt="instagram">
+				<img src="img/facebook.svg" alt="facebook">
+				<img src="img/twitter.svg" alt="twitter">
+			</div>
+		</div>
+	</footer>
+	<a href="#" id="toplink">
+
+	</a>
+</body>
+</html>
